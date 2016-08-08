@@ -1,5 +1,7 @@
 # staticSiteWithGulpTemplate
 
+ES6, SASS, Live Reloading
+
 This package will live-reload your browser every time you save a file. You can use SASS or regular CSS. IF IT DOESN'T SEEM TO BE RELOADING, LOOK AT YOUR TERMINAL, THERE IS PROBABLY AN ERROR IN YOUR CODE.
 
 1. Open your terminal
@@ -14,6 +16,8 @@ This package will live-reload your browser every time you save a file. You can u
   - delete the code in src/myStyles.scss
   - delete the code in src/template.js
   - delete the file src/_mobile.scss
+
+9. If you are going to use this for a real project, you'll want to delete the .git folder and then run `git init` to start fresh.
 
 
 
