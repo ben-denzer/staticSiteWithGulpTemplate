@@ -6,8 +6,7 @@ let babel = require('gulp-babel');
 let paths = {
 	js: 'src/js/*.js',
 	css: 'src/css/*.scss',
-	html: 'src/*.html',
-	img: 'src/images/*'
+	html: 'src/*.html'
 }
 
 //HTML
@@ -47,12 +46,6 @@ gulp.task('js:watch', ['js'], () => {
 	gulp.watch(paths.js, ['js']);
 });
 
-//IMAGES
-gulp.task('images', () => {
-	gulp.src('src/images/*')
-		.pipe(gulp.dest('dist/images'));
-});
-
 //RELOAD
 gulp.task('connect', () => {
 	connect.server({
@@ -62,6 +55,6 @@ gulp.task('connect', () => {
 });
 
 //BUILD AND WATCH
-gulp.task('build', ['html:watch', 'sass:watch', 'js:watch', 'images']);
+gulp.task('build', ['html:watch', 'sass:watch', 'js:watch']);
 
 gulp.task('default', ['build', 'connect']);
